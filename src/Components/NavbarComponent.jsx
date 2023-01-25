@@ -15,25 +15,25 @@ function NavbarComponent(props){
 
             <div className="Linksholder d-flex">
               
-              <Link to="/">
+              <Link to="/" className="Aboutlink">
               <div>
                     {list.AboutLinks}
                 </div>
               </Link>
 
-               <Link to="/Contact">
+               <Link to="/Contact" className="Projectlink">
                <div>
                     {list.Projects}
                 </div>
                </Link>
 
-              <Link to="/Resume">
+              <Link to="/Resume" className="Resumelink">
               <div>
                    {list.ResumeLink}
                 </div>
               </Link>
 
-              <Link to="/Projects">
+              <Link to="/Projects" className="Contactlink">
               <div>
                     {list.ContactLinks}
                 </div>
@@ -45,7 +45,7 @@ function NavbarComponent(props){
 
 
             <div>
-                <MdOutlineLightMode />
+                <MdOutlineLightMode size="30"/>
             </div>
             </div>
            </Container>

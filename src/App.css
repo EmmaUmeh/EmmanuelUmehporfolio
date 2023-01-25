@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 img{
   width: 100%;
   pointer-events: none;
@@ -14,6 +15,9 @@ img{
 
 .Navcontainer{
   width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  padding: 15px 5px 20px 5px;
 }
 .Navchild{
   display: flex;
@@ -23,8 +27,24 @@ img{
 }
 .Linksholder{
   background: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  padding: 5px 5px 5px 5px;
+
+  padding: 5px 8px 5px 8px;
+  grid-gap: 25px;
+  font-weight: 600;
+}
+.Aboutlink{
+  text-decoration: none;
+  color: #000;
+}
+.Contactlink{
+  text-decoration: none;
+  color: #000;
+}
+.Resumelink{
+  text-decoration: none;
+  color: #000;
+}
+.Projectlink{
+  text-decoration: none;
+  color: #000;
 }
