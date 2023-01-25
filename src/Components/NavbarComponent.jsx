@@ -1,35 +1,55 @@
 
-import {Container} from 'react-bootstrap'
+import {Container} from 'react-bootstrap';
+import {MdOutlineLightMode} from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
 
 function NavbarComponent(props){
     const NavList  = props.lists.map((list) => (  
          <div className="Navcontainer" key={list.id}>
-           <Container>
+            <Container>
+            <div className="Navchild">
             <div className="logoimage">
                 <img src={list.LogoImagUrl} alt={list.LogoImagAlt}/>
             </div>
 
-            <div className="flex">
-                <div>
+            <div className="Linksholder d-flex">
+              
+              <Link to="/">
+              <div>
                     {list.AboutLinks}
                 </div>
+              </Link>
 
-                <div>
+               <Link to="/Contact">
+               <div>
                     {list.Projects}
                 </div>
+               </Link>
 
-                <div>
+              <Link to="/Resume">
+              <div>
                    {list.ResumeLink}
                 </div>
+              </Link>
 
-                <div>
+              <Link to="/Projects">
+              <div>
                     {list.ContactLinks}
                 </div>
+              </Link>
 
                 
+            
+            </div>
 
+
+            <div>
+                <MdOutlineLightMode />
+            </div>
             </div>
            </Container>
+            
         </div>
     ));
 
@@ -48,7 +68,7 @@ export const Navdata = [
         LogoImagAlt:'LogoImage',
         AboutLinks:'About',
         Projects:'Projects',
-        ResumeLink:"Resume",
+        ResumeLink:'Resume',
        ContactLinks:'Contact',
        
     }
