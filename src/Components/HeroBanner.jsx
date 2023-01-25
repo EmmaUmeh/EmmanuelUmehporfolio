@@ -3,7 +3,7 @@
 const HeroBanner = () => {
 return(
     <div>
-        gj
+        gjhfhf
     </div>
 )
 }
