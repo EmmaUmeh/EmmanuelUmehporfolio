@@ -108,8 +108,14 @@ justify-content: space-around;
   display: flex;
  grid-gap: 20px;
 }
-
-
+.github{
+  margin-left: 4px;
+  font-weight: 500;
+}
+.herocontactlinks a{
+  color: #121212;
+  text-decoration: none;
+}
 
 
 /* Responsive */
@@ -169,5 +175,7 @@ justify-content: space-around;
   .descriptionname{
     width: 50%;
   }
-
+.github{
+  display: none;
+}
 }

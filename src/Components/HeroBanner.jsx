@@ -38,9 +38,17 @@ const HeroBanner = (props) => {
                 
 
                 <div className="mt-4 herocontactlinks">
-                    <span className=""><GoMarkGithub size="20"/></span>
-                    <span className="">< RiLinkedinBoxFill size="20"/></span>
-                    <span ><RiTwitterFill size="20"/></span>
+                   <a href={Herolist.descriptionGithubLink}>
+                   <span className=""><GoMarkGithub size="20"/><span className="github">{Herolist.descriptionGithub}</span></span>
+                   </a>
+
+                    <a href={Herolist.descriptionLinkendinLink}>
+                    <span className="">< RiLinkedinBoxFill size="20"/><span  className="github">{Herolist.descriptionLinkendin}</span></span>
+                    </a>
+                    
+                    <a href={Herolist.descriptionTwitterLink}>
+                    <span ><RiTwitterFill size="20"/><span  className="github">{Herolist.descriptionTwitter}</span></span>
+                    </a>
                     
                 </div>
             </div>
@@ -75,7 +83,13 @@ export const Herodata = [
         descriptionCall:"+234 7019 425976",
         descriptionLocation:"Nigeria, Abuja",
         descriptionHeroimage:"./assets/Heroimage.png",
-        descriptionAlt:"EmmaImage"
+        descriptionAlt:"EmmaImage",
+        descriptionGithub:"Github",
+        descriptionLinkendin:"Linkedin",
+        descriptionTwitter:"Twitter",
+        descriptionGithubLink:"https://github.com/EmmaUmeh/",
+        descriptionLinkendinLink:"https://www.linkedin.com/in/emmanuel-umeh-35078924b",
+        descriptionTwitterLink:"https://twitter.com/Emmanuel_umeh30?t=vkKog_zQcqsV1xEn7iumqg&s=08"
     }
 ]
 
