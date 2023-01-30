@@ -1,53 +1,77 @@
-
+import React,{ useState } from 'react';
 import {Container} from 'react-bootstrap';
-import {MdOutlineLightMode} from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import {HiMenuAlt2, HiX} from 'react-icons/hi'
 
 
 function NavbarComponent(props){
+    const [toggle,setToggle] = useState(false);
+
+    const handleToggle = () => setToggle(!toggle)
     const NavList  = props.lists.map((list) => (  
          <div className="Navcontainer" key={list.id}>
             <Container>
-            <div className="Navchild">
-            <div className="logoimage">
-                <img src={list.LogoImagUrl} alt={list.LogoImagAlt}/>
-            </div>
+            <Link to="/">
+                <div className="imageUrl">
+                    <img src={list.ImageUrl} alt={list.ImageAlt}/>
+                </div>
+            </Link>
+            <div className={toggle ? "Navchild" : "Navchild expanded"}>
 
-            <div className="Linksholder d-flex">
+            <div className="Navsubchild">
+         
+
+         
               
-              <Link to="/" className="Aboutlink">
-              <div>
-                    {list.AboutLinks}
-                </div>
-              </Link>
+         <Link to="/"  onClick={handleToggle} className="Aboutlink">
+           <div className="abt">
+                 {list.HomeLinks}
+             </div>
+           </Link>
 
-               <Link to="/Contact" className="Projectlink">
-               <div>
-                    {list.Projects}
-                </div>
-               </Link>
+           <Link to="/About"  onClick={handleToggle} className="Aboutlink">
+           <div className="abt">
+                 {list.AboutLinks}
+             </div>
+           </Link>
 
-              <Link to="/Resume" className="Resumelink">
-              <div>
-                   {list.ResumeLink}
-                </div>
-              </Link>
+            <Link to="/Contact"  onClick={handleToggle} className="Projectlink">
+            <div className="abt">
+                 {list.Projects}
+             </div>
+            </Link>
 
-              <Link to="/Projects" className="Contactlink">
-              <div>
-                    {list.ContactLinks}
-                </div>
-              </Link>
+           <Link to="/Resume"  onClick={handleToggle} className="Resumelink">
+           <div className="abt">
+                {list.ResumeLink}
+             </div>
+           </Link>
 
-                
-            
+           <Link to="/Projects"  onClick={handleToggle} className="Contactlink">
+           <div className="abt">
+                 {list.ContactLinks}
+             </div>
+           </Link>
+
+             
+         
+     
+
+
+        
+         </div>
+     
             </div>
 
-
-            <div>
-                <MdOutlineLightMode size="30"/>
-            </div>
-            </div>
+     
+            <div className="menubtn">
+                <button onClick={handleToggle}>
+                    {
+                        toggle ? <HiX size="40"/>
+                        :  <HiMenuAlt2 size="40"/>
+                    }
+                    </button>
+          </div>
            </Container>
             
         </div>
@@ -64,8 +88,9 @@ function NavbarComponent(props){
 export const Navdata = [
     {
         id:0,
-        LogoImagUrl:'./assets/Frame.png',
-        LogoImagAlt:'LogoImage',
+        ImageUrl:"./assets/Frame.png",
+        ImageAlt:"Logoimage",
+        HomeLinks:"Home",
         AboutLinks:'About',
         Projects:'Projects',
         ResumeLink:'Resume',
@@ -74,8 +99,6 @@ export const Navdata = [
     }
  ];
 
-
-//  <NavbarComponent lists={Nadata}/>
   
 export default NavbarComponent;
 

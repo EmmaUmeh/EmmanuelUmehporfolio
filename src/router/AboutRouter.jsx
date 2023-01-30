@@ -1,7 +1,10 @@
-
+import NavbarComponent from "../Components/NavbarComponent";
+import {Navdata} from '../Components/NavbarComponent';
 const AboutRouter = () => {
     return(
-        <div>d</div>
+        <div>
+            <NavbarComponent lists={Navdata}/>
+        </div>
     )
 }
 

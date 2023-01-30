@@ -9,28 +9,34 @@ img{
   pointer-events: none;
 }
 
-.logoimage{
-  width: 3%;
-}
 
 .Navcontainer{
   width: 100%;
   background-color: #FFFFFF;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
   padding: 15px 5px 20px 5px;
+  z-index: 1;
+  position: fixed;
 }
+/* .Navchild{
+  display: flex;
+  padding: 5px 8px 5px 8px;
+  grid-gap: 25px;
+
+  align-items: center;
+  justify-content: center;
+
+} */
 .Navchild{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-}
-.Linksholder{
-  background: #FFFFFF;
-
-  padding: 5px 8px 5px 8px;
-  grid-gap: 25px;
+  justify-content: center;
   font-weight: 600;
+}
+.Navsubchild{
+  display: flex;
+grid-gap: 50px;
 }
 .Aboutlink{
   text-decoration: none;
@@ -47,4 +53,150 @@ img{
 .Projectlink{
   text-decoration: none;
   color: #000;
+}
+.menubtn{
+
+  margin-top: -38px;
+  display: none;
+
+}
+.menubtn button{
+  border: none;
+  background-color: transparent;
+}
+.imageUrl{
+  display: none;
+  width: 10%;
+}
+/* Herosection */
+.Hireme button{
+  border: none;
+  background: #121212;
+  border-radius: 20px;
+  color: white;
+  font-weight: 800;
+  font-family: monospace;
+  padding: 5px 15px 5px 15px;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+
+}
+.Herosection{
+position: relative;
+top: 60px;
+/* background-color: white; */
+padding: 100px 5px 50px 5px;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+}
+.Heroimg{
+  width: 20%;
+}
+.herocontainer{
+  width: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+justify-content: space-around;
+}
+.descriptionname{
+  font-size: 40px;
+  font-weight: 600;
+}
+.descriptionjob{
+  font-size: 25px;
+}
+.heroaddress{
+  margin-top: 40px;
+}
+.herocontactlinks{
+  display: flex;
+ grid-gap: 20px;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width:500px) {
+  /* .Navchild{
+    position: fixed;
+    top: 0;
+    left: 0;
+ display: block;
+
+    background-color: #FFFFFF;
+    padding: 50px 5px 5px 20px;
+    height: 100%;
+    width: 75%;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); 
+    overflow-x: hidden;
+    font-weight: 300;
+
+  }
+  
+.expanded  .Navchild {
+    display: none;
+  } */
+
+
+  .Navchild .Navsubchild{
+    position: fixed;
+    top: 0;
+    left: 0;
+ display: block;
+
+    background-color: #FFFFFF;
+    padding: 50px 5px 5px 20px;
+    height: 100%;
+    width: 75%;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); 
+    overflow-x: hidden;
+    font-weight: 300;
+  }
+ .expanded .Navsubchild{
+    display: none;
+  }
+  .menubtn{
+    display: block;
+      display: flex;
+  justify-content: flex-end;
+
+  }
+  .Aboutlink{
+    font-size: 25px;
+  }
+  .abt{
+    margin-bottom: 10px;
+  }
+  .Projectlink{
+    font-size: 25px;
+  }
+  .Resumelink{
+    font-size: 25px;
+  }
+  .Contactlink{
+    font-size: 25px;
+  }
+  .imageUrl{
+    display: block;
+    /* margin-top: 30px; */
+  }
+  .herocontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  .Heroimg{
+    margin-top: 100px;
+    width: 80%;
+  }
+
+
+/* .Navcontainer{
+  box-shadow: none;
+} */
+
 }
