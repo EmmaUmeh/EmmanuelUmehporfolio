@@ -39,15 +39,15 @@ const HeroBanner = (props) => {
 
                 <div className="mt-4 herocontactlinks">
                    <a href={Herolist.descriptionGithubLink}>
-                   <span className=""><GoMarkGithub size="20"/><span className="github">{Herolist.descriptionGithub}</span></span>
+                   <span><GoMarkGithub size="30"/><span className="github">{Herolist.descriptionGithub}</span></span>
                    </a>
 
                     <a href={Herolist.descriptionLinkendinLink}>
-                    <span className="">< RiLinkedinBoxFill size="20"/><span  className="github">{Herolist.descriptionLinkendin}</span></span>
+                    <span className="">< RiLinkedinBoxFill size="30"/><span  className="github">{Herolist.descriptionLinkendin}</span></span>
                     </a>
                     
                     <a href={Herolist.descriptionTwitterLink}>
-                    <span ><RiTwitterFill size="20"/><span  className="github">{Herolist.descriptionTwitter}</span></span>
+                    <span ><RiTwitterFill size="30"/><span  className="github">{Herolist.descriptionTwitter}</span></span>
                     </a>
                     
                 </div>
