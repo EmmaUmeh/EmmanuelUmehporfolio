@@ -56,7 +56,7 @@ grid-gap: 50px;
 }
 .menubtn{
 
-  margin-top: -38px;
+  margin-top: -39px;
   display: none;
 
 }
@@ -77,15 +77,10 @@ grid-gap: 50px;
   font-weight: 800;
   font-family: monospace;
   padding: 5px 15px 5px 15px;
-  /* border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
-
 }
 .Herosection{
 position: relative;
 top: 60px;
-/* background-color: white; */
 padding: 100px 5px 50px 5px;
 box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
 }
@@ -118,28 +113,7 @@ justify-content: space-around;
 
 
 /* Responsive */
-@media screen and (max-width:500px) {
-  /* .Navchild{
-    position: fixed;
-    top: 0;
-    left: 0;
- display: block;
-
-    background-color: #FFFFFF;
-    padding: 50px 5px 5px 20px;
-    height: 100%;
-    width: 75%;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); 
-    overflow-x: hidden;
-    font-weight: 300;
-
-  }
-  
-.expanded  .Navchild {
-    display: none;
-  } */
-
-
+@media screen and (max-width:580px) {
   .Navchild .Navsubchild{
     position: fixed;
     top: 0;
@@ -180,7 +154,6 @@ justify-content: space-around;
   }
   .imageUrl{
     display: block;
-    /* margin-top: 30px; */
   }
   .herocontainer{
     width: 100%;
@@ -193,10 +166,8 @@ justify-content: space-around;
     margin-top: 100px;
     width: 80%;
   }
-
-
-/* .Navcontainer{
-  box-shadow: none;
-} */
+  .descriptionname{
+    width: 50%;
+  }
 
 }
