@@ -41,11 +41,13 @@ function NavbarComponent(props){
              </div>
             </Link>
 
-           <Link to="/Resume"  onClick={handleToggle} className="Resumelink">
+            <a href="./assets/Emmanuel Umeajaghaku Chinemerem.pdf" download className="Resumelink">
+           
            <div className="abt">
                 {list.ResumeLink}
+                    
              </div>
-           </Link>
+           </a>
 
            <Link to="/Projects"  onClick={handleToggle} className="Contactlink">
            <div className="abt">
