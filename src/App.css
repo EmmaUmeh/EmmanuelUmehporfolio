@@ -63,10 +63,12 @@ grid-gap: 50px;
 .menubtn button{
   border: none;
   background-color: transparent;
+  z-index: 1;
+  /* font-weight: 200; */
 }
 .imageUrl{
   display: none;
-  width: 10%;
+  width: 15%;
 }
 /* Herosection */
 .Hireme button{
@@ -119,6 +121,10 @@ justify-content: space-around;
   color: #121212;
   text-decoration: none;
 }
+/* Projects */
+.projectscontainer{
+  padding-top: 150px;
+}
 
 
 /* Responsive */
@@ -126,15 +132,14 @@ justify-content: space-around;
   .Navchild .Navsubchild{
     position: fixed;
     top: 0;
-    left: 0;
+  
  display: block;
-
     background-color: #FFFFFF;
     padding: 50px 5px 5px 20px;
-    height: 100%;
-    width: 75%;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); 
-    overflow-x: hidden;
+    height: 42%;
+    width: 105%;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);  */
+    /* overflow-x: hidden; */
     font-weight: 300;
   }
  .expanded .Navsubchild{
@@ -170,6 +175,7 @@ justify-content: space-around;
     flex-direction: column;
   align-items: center;
   justify-content: center;
+  
   }
   .Heroimg{
     margin-top: 100px;

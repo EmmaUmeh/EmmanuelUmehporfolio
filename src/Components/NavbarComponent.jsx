@@ -30,7 +30,7 @@ function NavbarComponent(props){
              </div>
            </Link>
 
-            <Link to="/Contact"  onClick={handleToggle} className="Projectlink">
+            <Link to="/Projects"  onClick={handleToggle} className="Projectlink">
             <div className="abt">
                  {list.Projects}
              </div>
@@ -43,12 +43,12 @@ function NavbarComponent(props){
                     
              </div>
            </a> */}
-
-           <Link to="/Projects"  onClick={handleToggle} className="Contactlink">
+{/* 
+           <Link to="/Contact"  onClick={handleToggle} className="Contactlink">
            <div className="abt">
                  {list.ContactLinks}
              </div>
-           </Link>
+           </Link> */}
 
              
          
