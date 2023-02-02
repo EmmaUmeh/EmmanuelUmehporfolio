@@ -23,11 +23,6 @@ function NavbarComponent(props){
 
          
               
-         <Link to="/"  onClick={handleToggle} className="Aboutlink">
-           <div className="abt">
-                 {list.HomeLinks}
-             </div>
-           </Link>
 
            <Link to="/About"  onClick={handleToggle} className="Aboutlink">
            <div className="abt">
@@ -41,13 +36,13 @@ function NavbarComponent(props){
              </div>
             </Link>
 
-            <a href="./assets/Emmanuel Umeajaghaku Chinemerem.pdf" download className="Resumelink">
+            {/* <a href="./assets/Emmanuel Umeajaghaku Chinemerem.pdf" download className="Resumelink">
            
            <div className="abt">
                 {list.ResumeLink}
                     
              </div>
-           </a>
+           </a> */}
 
            <Link to="/Projects"  onClick={handleToggle} className="Contactlink">
            <div className="abt">
@@ -92,10 +87,8 @@ export const Navdata = [
         id:0,
         ImageUrl:"./assets/Frame.png",
         ImageAlt:"Logoimage",
-        HomeLinks:"Home",
-        AboutLinks:'About',
+        AboutLinks:'About Me',
         Projects:'Projects',
-        ResumeLink:'Resume',
        ContactLinks:'Contact',
        
     }

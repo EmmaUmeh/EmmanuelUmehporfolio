@@ -78,6 +78,9 @@ grid-gap: 50px;
   font-family: monospace;
   padding: 5px 15px 5px 15px;
 }
+.Hireme a{
+  text-decoration: none;
+}
 .Herosection{
 position: relative;
 top: 60px;

@@ -2,7 +2,13 @@
 const HireMe = () => {
     return(
 <div className="Hireme">
-    <button>Hire Me</button>
+   
+    <a href="mailto:Emmachinemerem04@gmail.com">
+        <button>
+        Hire Me
+        </button>
+    </a>
+      
 </div>
     )
 }
