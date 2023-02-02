@@ -24,7 +24,7 @@ function NavbarComponent(props){
          
               
 
-           <Link to="/About"  onClick={handleToggle} className="Aboutlink">
+           <Link to="/"  onClick={handleToggle} className="Aboutlink">
            <div className="abt">
                  {list.AboutLinks}
              </div>
