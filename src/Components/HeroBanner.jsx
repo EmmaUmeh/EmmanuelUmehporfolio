@@ -89,7 +89,7 @@ export const Herodata = [
         descriptionTwitter:"Twitter",
         descriptionGithubLink:"https://github.com/EmmaUmeh/",
         descriptionLinkendinLink:"https://www.linkedin.com/in/emmanuel-umeh-35078924b",
-        descriptionTwitterLink:"https://twitter.com/Emmanuel_umeh30?t=vkKog_zQcqsV1xEn7iumqg&s=08"
+        descriptionTwitterLink:"https://twitter.com/ElonLostSon?t=JHr14DG2aCPDEqJMNWLZTA&s=08..."
     }
 ]
 
