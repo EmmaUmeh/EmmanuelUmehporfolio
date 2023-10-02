@@ -175,7 +175,7 @@ padding: 30px 50px 50px 150px;
 /* Projects */
 .projectscontainer{
 
-  padding: 135px 20px 30px 20px;
+  padding: 120px 20px 30px 20px;
   color: white;
 }
 
@@ -264,7 +264,7 @@ margin-top: 6px;
 
 .projectgrid{
   /* background-color: #05080c; */
-  padding: 20px 10px 20px 10px;
+  padding: 20px 20px 20px 20px;
   border-radius: 10px;
  
 }
@@ -411,7 +411,7 @@ padding: 10px 30px 5px 30px;
 }
 
 .descriptiontext{
-  width: 90%;
+  width: 100%;
 }
 
 .descriptionjob{

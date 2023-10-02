@@ -19,7 +19,7 @@ const AboutMe = () => {
                         <div>
                             <h4 className='about-me'>ABOUT ME</h4>
                                 <p className='aboutparagraphOne'>
-                                    Hi, i am Emanuel Umeajaghaku, a seasoned developer who loves to break the dilemma of codes, i solve real world problems that brings solution to the world.
+                                    Hi, i am Emanuel Umeh, a seasoned developer who loves to break the dilemma of codes, i solve real world problems that brings solution to the world.
                                 </p>
 
                                 <p className='aboutparagraphTwo'>

@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="footer">
                 <hr />
                 <div className="footer-flex">
-                    <span>Emmanuel Umeajaghaku</span>
+                    <span>Emmanuel Umeh</span>
 
                     <span>&copy;2023</span>
                 </div>

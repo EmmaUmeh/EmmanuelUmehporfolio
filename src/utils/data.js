@@ -15,7 +15,7 @@ export const data = [
 
     {
         id: 1,
-        image: "BUZZ.PNG",  
+        image: "buzzone.JPG",  
         ImageUrl: 'https://eboost.netlify.app/',
         GithubUrl: 'https://github.com/EmmaUmeh/BuzzdigitalAgency',
         title: 'Buzz Digital',

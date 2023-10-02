@@ -57,7 +57,7 @@ const HeroBanner = (props) => {
 export const Herodata = [
     {
         id: 0,
-        descriptionName: "Emmanuel Umeajaghaku",
+        descriptionName: "Emmanuel Umeh",
         descriptionJob: "I'm a Software envagelist who drafts technical articles, maintain responsive Ui designs, blockchain enthusiast & a team player with an eye for detail.",
         descriptionEmail: "Emmachinemerem04@gmail.com",
         descriptionCall: "+234 7019 425976",
