@@ -2,21 +2,51 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+
 }
 
 img{
   width: 100%;
   pointer-events: none;
+  
 }
 
 
+/* */
+
+body.custom-body {
+  background-color: #1b1f24;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3;
+
+}
+
 .Navcontainer{
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #1b1f24;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-  padding: 15px 5px 20px 5px;
+  padding: 20px 5px 20px 5px;
   z-index: 1;
-  position: fixed;
+position: relative;
+}
+
+.linksflex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.roundlogo{
+  border-radius: 50%;
+  background-color: white;
+  color: #121212;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px 5px 12px;
+  
 }
 /* .Navchild{
   display: flex;
@@ -27,24 +57,18 @@ img{
   justify-content: center;
 
 } */
-.Navchild{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-}
+
 .Navsubchild{
   display: flex;
 grid-gap: 50px;
 }
 .Aboutlink{
   text-decoration: none;
-  color: #000;
+  color: white;
 }
 .Contactlink{
   text-decoration: none;
-  color: #000;
+  color: white;
 }
 .Resumelink{
   text-decoration: none;
@@ -52,11 +76,12 @@ grid-gap: 50px;
 }
 .Projectlink{
   text-decoration: none;
-  color: #000;
+  color: white;
 }
+
 .menubtn{
 
-  margin-top: -39px;
+  /* margin-top: -39px; */
   display: none;
 
 }
@@ -70,41 +95,58 @@ grid-gap: 50px;
   display: none;
   width: 15%;
 }
+.buttonflex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 /* Herosection */
 .Hireme button{
   border: none;
-  background: #121212;
-  border-radius: 20px;
+  /* background: #121212; */
+  border-radius: 30px;
   color: white;
-  font-weight: 800;
-  font-family: monospace;
-  padding: 5px 15px 5px 15px;
+  font-weight: 900;
+  /* font-size: 20px; */
+  /* font-family: monospace; */
+  padding: 18px 35px 18px 35px;
 }
 .Hireme a{
   text-decoration: none;
 }
 .Herosection{
-position: relative;
-top: 60px;
-padding: 100px 5px 50px 5px;
-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+
+padding: 30px 50px 50px 150px;
+/* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
 }
 .Heroimg{
   width: 20%;
 }
 .herocontainer{
   width: 100%;
-  display: flex;
-align-items: center;
-justify-content: center;
-justify-content: space-around;
+/* justify-content: space-around; */
+}
+
+.title{
+  color: rgba(255, 255, 255, 0.882); 
+}
+
+.descriptiontext{
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  width: 60%;
 }
 .descriptionname{
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
+  color: white;
 }
 .descriptionjob{
-  font-size: 25px;
+  font-size: 18px;
+  width: 60%;
+  color: white;
+  margin-bottom: 50px;
 }
 .heroaddress{
   margin-top: 40px;
@@ -112,6 +154,15 @@ justify-content: space-around;
 .herocontactlinks{
   display: flex;
  grid-gap: 20px;
+}
+.herocontactlinksresponsive{
+  /* display: flex; */
+ /* grid-gap: 20px; */
+ display: none; 
+}
+.herocontactlinksresponsive .github{
+  margin-left: 4px;
+  font-weight: 500; 
 }
 .github{
   margin-left: 4px;
@@ -123,21 +174,191 @@ justify-content: space-around;
 }
 /* Projects */
 .projectscontainer{
-  padding-top: 150px;
+
+  padding: 135px 20px 30px 20px;
+  color: white;
+}
+
+.hr{
+  margin-top: 50px;
+  /* height: 1px; */
+  border: 2px solid white;
+  width: 100%;
+}
+
+/* About */
+.about-container{
+  color: white;
+  /* margin-bottom: 60px; */
+  width: 100%;
+  padding: 110px 20px 20px 160px;
+
+}
+
+.about-child{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-content: center;
+}
+
+.aboutImg{
+  width: 70%;
+ /* margin-top: 15px; */
+ margin-top: 58px;
 }
 
 
+.aboutparagraphOne{
+  width: 85%;
+}
+
+.aboutparagraphTwo{
+  width: 75%;
+}
+
+.about-me{
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.stacks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+margin-top: 6px;
+
+}
+
+.stacks-child{
+  padding-top: 10px;
+}
+
+.stack-title{
+  margin-top: 20px;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.stack-icons{
+  color: aquamarine;
+  font-size: 14px;
+}
+
+
+/* projects */
+.projectlist{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+
+  
+  /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
+}
+.projectchild{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectgrid{
+  /* background-color: #05080c; */
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+ 
+}
+
+.project-h3{
+font-weight: 800;
+}
+
+.projectImg{
+  width: 50vh;
+  background-color: #05080c;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+ 
+}
+
+.projecttitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+.projectdescription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.stackgrid{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 15px;  
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #8892b0;
+  text-align: center;
+}
+
+
+.projectlink{
+  color: white;
+  text-decoration: none;
+}
+
+.projectlink a, h5:hover {
+  color: white;
+}
+
+.visit{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+ 
+
+}
+
+.visit a{
+  font-size: 15px;
+  font-weight: 500;
+}
+.visit a:hover {
+  color: white;
+}
+
+.footer{
+  margin-top: 60px;
+  color: white;
+  
+}
+
+.footer-flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 30px 5px 30px;
+}
+
 /* Responsive */
-@media screen and (max-width:580px) {
+@media screen and (max-width:767px) {
   .Navchild .Navsubchild{
     position: fixed;
     top: 0;
-  
+    left: 0;
  display: block;
-    background-color: #FFFFFF;
+ background-color: #1b1f24;
+ font-family: 'Montserrat', sans-serif;
     padding: 50px 5px 5px 20px;
     height: 42%;
-    width: 105%;
+    width: 100%;
     /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);  */
     /* overflow-x: hidden; */
     font-weight: 300;
@@ -169,14 +390,7 @@ justify-content: space-around;
   .imageUrl{
     display: block;
   }
-  .herocontainer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  }
+
   .Heroimg{
     margin-top: 100px;
     width: 80%;
@@ -187,4 +401,285 @@ justify-content: space-around;
 .github{
   display: none;
 }
+
+.herocontactlinksresponsive{
+  display: block;
+  
+}
+.herocontactlinks{
+  display: none;
+}
+
+.descriptiontext{
+  width: 90%;
+}
+
+.descriptionjob{
+
+  width: 100%;
+}
+
+/* about */
+
+.about-child{
+  display: flex;
+
+  flex-direction: column;
+}
+.about-container{
+  color: white;
+  /* margin-bottom: 60px; */
+  width: 100%;
+  padding: 110px 40px 20px 40px;
+
+}
+
+.aboutparagraphOne{
+  width: 100%;
+}
+
+.aboutparagraphTwo{
+  width: 100%;
+}
+
+.stacks{
+display: flex;
+flex-direction: column;
+margin-top: 6px;
+}
+
+  .Hireme button{
+  
+    padding: 18px 30px 18px 30px;
+  }
+
+  .aboutImg{
+    width: 80%;
+   
+  }
+
+  .Herosection{
+
+    padding: 30px 10px 50px 10px;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
+    }
+}
+
+/* @media (min-width: 768px and max-width: 1023px) { ... } */
+@media (min-width: 768px ) and ( max-width: 1023px) {
+  .Navchild .Navsubchild{
+    position: fixed;
+    top: 0;
+    left: 0;
+ display: block;
+ background-color: #1b1f24;
+ font-family: 'Montserrat', sans-serif;
+    padding: 50px 5px 5px 20px;
+    height: 42%;
+    width: 100%;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);  */
+    /* overflow-x: hidden; */
+    font-weight: 300;
+  }
+ .expanded .Navsubchild{
+    display: none;
+  }
+  .menubtn{
+    display: block;
+      display: flex;
+  justify-content: flex-end;
+
+  }
+  .Aboutlink{
+    font-size: 25px;
+  }
+  .abt{
+    margin-bottom: 10px;
+  }
+  .Projectlink{
+    font-size: 25px;
+  }
+  .Resumelink{
+    font-size: 25px;
+  }
+  .Contactlink{
+    font-size: 25px;
+  }
+  .imageUrl{
+    display: block;
+  }
+ 
+  .Heroimg{
+    margin-top: 100px;
+    width: 80%;
+  }
+  .descriptionname{
+    width: 50%;
+  }
+.github{
+  display: none;
+}
+
+.herocontactlinksresponsive{
+  display: block;
+  
+}
+.herocontactlinks{
+  display: none;
+}
+
+.descriptiontext{
+  width: 100%;
+}
+
+.descriptionjob{
+
+  width: 100%;
+}
+
+.about-child{
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+.about-container{
+  color: white;
+  /* margin-bottom: 60px; */
+  width: 100%;
+  padding: 110px 30px 20px 60px;
+
+}
+.aboutparagraphOne{
+  width: 80%;
+}
+
+.aboutparagraphTwo{
+  width: 90%;
+}
+
+ 
+   .aboutImg{
+    width: 300vh;
+    margin-top: -150px;
+   }
+ 
+   .Herosection{
+
+    padding: 30px 10px 50px 10px;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
+    }
+}
+
+
+/* @media (min-width: 768px and max-width: 1023px) { ... } */
+@media (min-width: 1024px ) and ( max-width: 1279px) {
+  .Navchild .Navsubchild{
+    position: fixed;
+    top: 0;
+    left: 0;
+ display: block;
+ background-color: #1b1f24;
+ font-family: 'Montserrat', sans-serif;
+    padding: 50px 5px 5px 20px;
+    height: 42%;
+    width: 100%;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);  */
+    /* overflow-x: hidden; */
+    font-weight: 300;
+  }
+ .expanded .Navsubchild{
+    display: none;
+  }
+  .menubtn{
+    display: block;
+      display: flex;
+  justify-content: flex-end;
+
+  }
+  .Aboutlink{
+    font-size: 25px;
+  }
+  .abt{
+    margin-bottom: 10px;
+  }
+  .Projectlink{
+    font-size: 25px;
+  }
+  .Resumelink{
+    font-size: 25px;
+  }
+  .Contactlink{
+    font-size: 25px;
+  }
+  .imageUrl{
+    display: block;
+  }
+ 
+  .Heroimg{
+    margin-top: 100px;
+    width: 80%;
+  }
+  .descriptionname{
+    width: 80%;
+  }
+.github{
+  display: none;
+}
+
+.herocontactlinksresponsive{
+  display: block;
+  
+}
+.herocontactlinks{
+  display: none;
+}
+
+.descriptiontext{
+  width: 100%;
+}
+
+.descriptionjob{
+
+  width: 100%;
+}
+
+.about-child{
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+
+
+   .about-container{
+    color: white;
+    /* margin-bottom: 60px; */
+    width: 100%;
+    padding: 110px 30px 20px 60px;
+  
+  }
+  .aboutparagraphOne{
+    width: 80%;
+  }
+  
+  .aboutparagraphTwo{
+    width: 90%;
+  }
+  
+   
+     .aboutImg{
+      width: 300vh;
+      margin-top: 99px;
+     }
+
+
+
+   .Herosection{
+
+    padding: 30px 10px 50px 10px;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
+    }
 }

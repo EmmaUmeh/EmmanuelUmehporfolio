@@ -1,16 +1,21 @@
-
-const HireMe = () => {
-    return(
-<div className="Hireme">
+const HireMe = ({ buttonText, buttonColor, buttonTextColor, buttonBorderColor  }) => {
    
-    <a href="mailto:Emmachinemerem04@gmail.com">
-        <button>
-        Hire Me
-        </button>
-    </a>
-      
-</div>
-    )
-}
-
-export default HireMe;
+    const buttonStyle = {
+        backgroundColor: buttonColor,
+        color: buttonTextColor,
+        border: buttonBorderColor,
+      };
+   
+    return (
+      <div className="Hireme">
+        <a>
+          <button style={buttonStyle}>
+            {buttonText}
+          </button>
+        </a>
+      </div>
+    );
+  };
+  
+  export default HireMe;
+  

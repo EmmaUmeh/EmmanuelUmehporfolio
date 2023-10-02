@@ -1,15 +1,14 @@
+import Footer from "../Components/Footer";
+import ProjectsComponent from "../Components/ProjectsComponent";
 
-import NavbarComponent from "../Components/NavbarComponent";
-import {Navdata} from '../Components/NavbarComponent';
-import {Projects} from "../Components/ProjectsComponent"
-import ProjectsComponent from "../Components/ProjectsComponent"
 
 const ProjectsRouter = () => {
  
     return(
         <div>
-                 <NavbarComponent lists={Navdata}/>
-                <ProjectsComponent projectLists={Projects}/>
+                
+                <ProjectsComponent/>
+                <Footer />
             </div>
     )
 }
