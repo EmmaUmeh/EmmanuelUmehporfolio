@@ -14,7 +14,7 @@ function NavbarComponent(props) {
         <div className="Navcontainer" key={list.id}>
             <Container>
                 <div className='linksflex'>
-                <Link to="/">
+                <Link to="/" className='Aboutlink'>
                             <div className="roundlogo">E</div>
                     </Link>
                    
