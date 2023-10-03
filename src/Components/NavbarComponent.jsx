@@ -14,7 +14,10 @@ function NavbarComponent(props) {
         <div className="Navcontainer" key={list.id}>
             <Container>
                 <div className='linksflex'>
-                    <div className="roundlogo">E</div>
+                <Link to="/">
+                            <div className="roundlogo">E</div>
+                    </Link>
+                   
                     <div className={toggle ? "Navchild" : "Navchild expanded"}>
 
                         <div className="Navsubchild">
