@@ -1,4 +1,4 @@
-import ImageUrl from '../assets/profile_pic.jpg';
+import ImageUrl from '../assets/profile_pic.png';
 import { VscDebugStart } from 'react-icons/vsc'
 
 
@@ -16,7 +16,7 @@ const AboutMe = () => {
         <>
             <div className="about-container">
                     <div className='about-child'>
-                        <div>
+                        <div className="animate__animated animate__backInLeft">
                             <h4 className='about-me'>ABOUT ME</h4>
                                 <p className='aboutparagraphOne'>
                                     Hi, i am Emanuel Umeh, a seasoned developer who loves to break the dilemma of codes, i solve real world problems that brings solution to the world.
@@ -44,9 +44,11 @@ const AboutMe = () => {
                                 </div>
                         </div>
 
-                        <div className='aboutImg'>
-                            <img src={ImageUrl}  className='aboutimgborderRaduis'/>
-                        </div>
+                       
+                            <div className='animate__animated animate__bounceInUp aboutImg'>
+                                <img src={ImageUrl}  className='aboutimgborderRaduis'/>
+                            </div>
+                       
                     </div>
             </div>
         </>

@@ -10,25 +10,27 @@ const HeroBanner = (props) => {
                 <Container>
                     <div className="herochild">
 
-                        <span className="title">Hi, my name is</span>
-                        <div className="descriptionname">
+                        <div className="animate__animated animate__backInLeft">
+                             <span className="title">Hi, my name is</span>
+                        </div>
+                        <div className="animate__animated animate__backInLeft descriptionname">
                             {Herolist.descriptionName}
                         </div>
 
-                        <div>
+                        <div className="animate__animated animate__backInLeft">
                             <h4 className="descriptiontext">I Love building softwares that solve crazy solutions.</h4>
                         </div>
 
-                        <div className="descriptionjob">
+                        <div className="animate__animated animate__backInLeft descriptionjob">
                             {Herolist.descriptionJob}
                         </div>
 
-                        <div className="buttonflex">
+                        <div className="animate__animated animate__bounceInUp buttonflex">
                             <a href="mailto:Emmachinemerem04@gmail.com">
                                 <HireMe buttonText={"Get In Touch"} buttonColor="white" buttonTextColor="black" />
                             </a>
 
-                            <a href="https://drive.google.com/file/d/1Y08Y-BBMHchTwexkv30npUBgpRHkoLv4/view?usp=drive_link">
+                            <a href="animate__animated animate__bounceInUp https://drive.google.com/file/d/1Y08Y-BBMHchTwexkv30npUBgpRHkoLv4/view?usp=drive_link">
                             <HireMe buttonText={"View Resume"} buttonBorderColor="2px solid white" buttonColor="transparent"/>
                             </a>
                         </div>

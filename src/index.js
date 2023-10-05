@@ -3,6 +3,7 @@ import {createRoot} from 'react-dom/client';
 import App from './App';
 // import "./App.css";
 import "./App.css";
+import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import "react-bootstrap/dist/css/"

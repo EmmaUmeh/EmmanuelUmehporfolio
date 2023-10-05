@@ -201,12 +201,21 @@ padding: 30px 50px 50px 150px;
  justify-content: center;
 }
 
-.aboutImg{
-  width: 70%;
- /* margin-top: 15px; */
- margin-top: 58px;
-}
 
+/* styles.css (or your CSS file name) */
+.aboutImg {
+  
+  width: 58%;
+  /* margin-top: 15px; */
+  margin-top: 58px;
+}
+/* styles.css */
+
+
+
+/* .aboutimgborderRaduis{
+  height: 70vh;
+} */
 
 .aboutparagraphOne{
   width: 85%;
