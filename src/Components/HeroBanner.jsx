@@ -30,9 +30,11 @@ const HeroBanner = (props) => {
                                 <HireMe buttonText={"Get In Touch"} buttonColor="white" buttonTextColor="black" />
                             </a>
 
-                            <a href="animate__animated animate__bounceInUp https://drive.google.com/file/d/1Y08Y-BBMHchTwexkv30npUBgpRHkoLv4/view?usp=drive_link">
-                            <HireMe buttonText={"View Resume"} buttonBorderColor="2px solid white" buttonColor="transparent"/>
-                            </a>
+                           
+                                <a href="https://drive.google.com/file/d/1ikDDUZx_GG0RyPayNmB0F30_8aOOnXVr/view?usp=drive_link">
+                                <HireMe buttonText={"View Resume"} buttonBorderColor="2px solid white" buttonColor="transparent"/>
+                                </a>
+                            
                         </div>
                        
                         
