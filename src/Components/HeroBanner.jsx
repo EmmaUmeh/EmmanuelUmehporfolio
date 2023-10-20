@@ -30,7 +30,7 @@ const HeroBanner = (props) => {
                                 <HireMe buttonText={"Get In Touch"} buttonColor="white" buttonTextColor="black" />
                             </a>
 
-                            <a href="https://drive.google.com/file/d/1ikDDUZx_GG0RyPayNmB0F30_8aOOnXVr/view?usp=drive_link">
+                            <a href="https://drive.google.com/file/d/1WCDKl49X0yzxiO495x4S0rNly_wXQPe7/view?usp=share_link">
                             <HireMe buttonText={"View Resume"} buttonBorderColor="2px solid white" buttonColor="transparent"/>
                             </a>
                         </div>
