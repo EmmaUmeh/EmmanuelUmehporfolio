@@ -1,6 +1,7 @@
 
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return(
         <>
             <div className="footer">
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className="footer-flex">
                     <span>Emmanuel Umeh</span>
 
-                    <span>&copy;2023</span>
+                    <span>&copy;{currentYear}</span>
                 </div>
             </div>
         </>

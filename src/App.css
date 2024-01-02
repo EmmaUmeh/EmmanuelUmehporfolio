@@ -119,12 +119,40 @@ grid-gap: 50px;
 padding: 30px 50px 50px 150px;
 /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
 }
-.Heroimg{
-  width: 20%;
+
+.heroImgcont{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -130px;
+  margin-left: 320px;
+
+}
+
+.heroImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .herocontainer{
   width: 100%;
+ padding-top: 130px;
 /* justify-content: space-around; */
+}
+
+.herochild{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heroImg{
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
 .title{
@@ -132,19 +160,26 @@ padding: 30px 50px 50px 150px;
 }
 
 .descriptiontext{
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 900;
   color: white;
-  width: 60%;
+  /* width: 60%; */
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
 }
 .descriptionname{
   font-size: 50px;
   font-weight: 600;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .descriptionjob{
+  display: flex;
+  justify-content: center;
   font-size: 18px;
-  width: 60%;
+  width: 100%;
   color: white;
   margin-bottom: 50px;
 }
@@ -188,16 +223,16 @@ padding: 30px 50px 50px 150px;
 
 /* About */
 .about-container{
-  color: white;
+  color: black;
   /* margin-bottom: 60px; */
   width: 100%;
-  padding: 110px 20px 20px 160px;
+  background-color: white;
+  padding: 110px 20px 90px 160px;
 
 }
 
 .about-child{
- display: grid;
- grid-template-columns: 1fr 1fr;
+
  justify-content: center;
 }
 
@@ -205,20 +240,24 @@ padding: 30px 50px 50px 150px;
 /* styles.css (or your CSS file name) */
 .aboutImg {
   
-  width: 58%;
+  width: 28%;
   /* margin-top: 15px; */
-  margin-top: 58px;
 }
 /* styles.css */
 
 
 
 /* .aboutimgborderRaduis{
+
   height: 70vh;
 } */
 
 .aboutparagraphOne{
-  width: 85%;
+  width: 90%;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutparagraphTwo{
@@ -228,8 +267,16 @@ padding: 30px 50px 50px 150px;
 .about-me{
   font-weight: 800;
   margin-bottom: 25px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
+.aboutchildTwo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .stacks{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -280,6 +327,14 @@ margin-top: 6px;
 
 .project-h3{
 font-weight: 800;
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.project-span{
+  display: flex;
+  justify-content: center;
 }
 
 .projectImg{
@@ -362,15 +417,17 @@ padding: 10px 30px 5px 30px;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
  display: block;
  background-color: #1b1f24;
  font-family: 'Montserrat', sans-serif;
-    padding: 50px 5px 5px 20px;
-    height: 42%;
+    padding: 50px 5px 95px 20px;
+    height: 50%;
     width: 100%;
     /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);  */
     /* overflow-x: hidden; */
     font-weight: 300;
+    
   }
  .expanded .Navsubchild{
     display: none;
@@ -421,6 +478,7 @@ padding: 10px 30px 5px 30px;
 
 .descriptiontext{
   width: 100%;
+  text-wrap: wrap;
 }
 
 .descriptionjob{
@@ -432,11 +490,12 @@ padding: 10px 30px 5px 30px;
 
 .about-child{
   display: flex;
-
+ 
   flex-direction: column;
 }
 .about-container{
-  color: white;
+  color: black;
+  
   /* margin-bottom: 60px; */
   width: 100%;
   padding: 110px 40px 20px 40px;
@@ -471,6 +530,17 @@ margin-top: 6px;
 
     padding: 30px 10px 50px 10px;
     /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
+    }
+
+    .heroImgcont{
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      margin-top: -150px;
+      margin-left: 30px;
+    
     }
 }
 
@@ -539,13 +609,23 @@ margin-top: 6px;
 
 .descriptiontext{
   width: 100%;
+  text-wrap: wrap;
 }
 
 .descriptionjob{
 
   width: 100%;
 }
+.heroImgcont{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  margin-top: -150px;
+  margin-left: 30px;
+
+}
 .about-child{
   display: flex;
   align-items:  center;
@@ -583,112 +663,3 @@ margin-top: 6px;
 
 
 /* @media (min-width: 768px and max-width: 1023px) { ... } */
-@media (min-width: 1024px ) and ( max-width: 1279px) {
-  .Navchild .Navsubchild{
-    position: fixed;
-    top: 0;
-    left: 0;
- display: block;
- background-color: #1b1f24;
- font-family: 'Montserrat', sans-serif;
-    padding: 50px 5px 5px 20px;
-    height: 42%;
-    width: 100%;
-    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);  */
-    /* overflow-x: hidden; */
-    font-weight: 300;
-  }
- .expanded .Navsubchild{
-    display: none;
-  }
-  .menubtn{
-    display: block;
-      display: flex;
-  justify-content: flex-end;
-
-  }
-  .Aboutlink{
-    font-size: 25px;
-  }
-  .abt{
-    margin-bottom: 10px;
-  }
-  .Projectlink{
-    font-size: 25px;
-  }
-  .Resumelink{
-    font-size: 25px;
-  }
-  .Contactlink{
-    font-size: 25px;
-  }
-  .imageUrl{
-    display: block;
-  }
- 
-  .Heroimg{
-    margin-top: 100px;
-    width: 80%;
-  }
-  .descriptionname{
-    width: 80%;
-  }
-.github{
-  display: none;
-}
-
-.herocontactlinksresponsive{
-  display: block;
-  
-}
-.herocontactlinks{
-  display: none;
-}
-
-.descriptiontext{
-  width: 100%;
-}
-
-.descriptionjob{
-
-  width: 100%;
-}
-
-.about-child{
-  display: flex;
-  align-items:  center;
-  justify-content: center;
-  justify-content: space-around;
-
-}
-
-
-   .about-container{
-    color: white;
-    /* margin-bottom: 60px; */
-    width: 100%;
-    padding: 110px 30px 20px 60px;
-  
-  }
-  .aboutparagraphOne{
-    width: 80%;
-  }
-  
-  .aboutparagraphTwo{
-    width: 90%;
-  }
-  
-   
-     .aboutImg{
-      width: 300vh;
-      margin-top: 99px;
-     }
-
-
-
-   .Herosection{
-
-    padding: 30px 10px 50px 10px;
-    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
-    }
-}

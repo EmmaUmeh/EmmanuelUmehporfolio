@@ -1,4 +1,4 @@
-import ImageUrl from '../assets/profile_pic.png';
+import ImageUrl from '../assets/emma.jpg';
 import { VscDebugStart } from 'react-icons/vsc'
 
 
@@ -16,17 +16,17 @@ const AboutMe = () => {
         <>
             <div className="about-container">
                     <div className='about-child'>
-                        <div className="animate__animated animate__backInLeft">
-                            <h4 className='about-me'>ABOUT ME</h4>
+                        <div className="animate__animated animate__backInLeft aboutchildTwo">
+                            <h4 className='about-me'>Hi, I'm Emmauel. Pleasure to connect with you.</h4>
                                 <p className='aboutparagraphOne'>
-                                    Hi, i am Emanuel Umeh, a seasoned developer who loves to break the dilemma of codes, i solve real world problems that brings solution to the world.
+                                   A seasoned developer who loves to break the dilemma of codes, i solve real world problems that brings solution to the world. My focus over the years has been on crafting and engineering solutions that prioritize making a positive impact on the world.
                                 </p>
 
                                 <p className='aboutparagraphTwo'>
-                                    I started early 2021, before venturing into tech i have had this calling to become an engineer but not knowing where to fall into #lol😅. So i started by attending a 3 months coding class which was not for the weak😂 to cut the story short am grateful for where am i today. 
+                                    
                                 </p>
 
-                                <span>Here are a few technologies I’ve worked on:</span>
+                                <span>Here are a few technologies I’ve worked with lately:</span>
 
                                 <div className='stacks'>
         
@@ -43,12 +43,6 @@ const AboutMe = () => {
             
                                 </div>
                         </div>
-
-                       
-                            <div className='animate__animated animate__bounceInUp aboutImg'>
-                                <img src={ImageUrl}  className='aboutimgborderRaduis'/>
-                            </div>
-                       
                     </div>
             </div>
         </>

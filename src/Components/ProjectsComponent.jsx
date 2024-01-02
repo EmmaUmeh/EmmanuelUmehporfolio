@@ -9,8 +9,8 @@ const ProjectsComponent = () => {
         <div className="projectscontainer">
             <Container>
                 <div>
-                    <h3 className="project-h3">Project</h3>
-                    <span className="mb-5">Over the decades being a software engineer involves building projects and also solving complex problems so as to upskill and also learn while building: Here are some projects that I have built lately.</span>
+                    <h3 className="project-h3">My Recent Work</h3>
+                    <span className="mb-5 project-span">Here are some live projects I've worked on.</span>
 
                     {/* Projects */}
                     <Row>
